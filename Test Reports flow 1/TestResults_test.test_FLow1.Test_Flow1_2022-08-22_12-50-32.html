@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-08-22 12:50:32</p>
+                <p class='attribute'><strong>Duration: </strong>61.34 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 0, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>test.test_FLow1.Test_Flow1</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_Regression_test_1</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p><selenium.webdriver.chrome.webdriver.WebDriver (session="b61687f68cf13c9bf6b23e8aa096c915")>
+<selenium.webdriver.chrome.webdriver.WebDriver (session="b61687f68cf13c9bf6b23e8aa096c915")>
+</p><p style="color:maroon;">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.81)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009D5FD3+2187219]
+	Ordinal0 [0x0096E6D1+1763025]
+	Ordinal0 [0x00883D40+802112]
+	Ordinal0 [0x00878A12+756242]
+	Ordinal0 [0x00879248+758344]
+	Ordinal0 [0x0087AB02+764674]
+	Ordinal0 [0x00874379+738169]
+	Ordinal0 [0x008851D0+807376]
+	Ordinal0 [0x008DC7A2+1165218]
+	Ordinal0 [0x008CC9A6+1100198]
+	Ordinal0 [0x008A6F80+946048]
+	Ordinal0 [0x008A7E76+949878]
+	GetHandleVerifier [0x00C790C2+2721218]
+	GetHandleVerifier [0x00C6AAF0+2662384]
+	GetHandleVerifier [0x00A6137A+526458]
+	GetHandleVerifier [0x00A60416+522518]
+	Ordinal0 [0x00974EAB+1789611]
+	Ordinal0 [0x009797A8+1808296]
+	Ordinal0 [0x00979895+1808533]
+	Ordinal0 [0x009826C1+1844929]
+	BaseThreadInitThunk [0x75E4FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DD7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DD7A6E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Alan Sanchez\Desktop\FLow1_Automation\src\PageObject\Pages\EditDetailsPage.py", line 88, in edit_location_type
+    element = WebDriverWait(self.driver, 10).until(
+  File "C:\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 81, in until
+    value = method(self._driver)
+  File "C:\Python310\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 64, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 857, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 435, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.81)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009D5FD3+2187219]
+	Ordinal0 [0x0096E6D1+1763025]
+	Ordinal0 [0x00883D40+802112]
+	Ordinal0 [0x00878A12+756242]
+	Ordinal0 [0x00879248+758344]
+	Ordinal0 [0x0087AB02+764674]
+	Ordinal0 [0x00874379+738169]
+	Ordinal0 [0x008851D0+807376]
+	Ordinal0 [0x008DC7A2+1165218]
+	Ordinal0 [0x008CC9A6+1100198]
+	Ordinal0 [0x008A6F80+946048]
+	Ordinal0 [0x008A7E76+949878]
+	GetHandleVerifier [0x00C790C2+2721218]
+	GetHandleVerifier [0x00C6AAF0+2662384]
+	GetHandleVerifier [0x00A6137A+526458]
+	GetHandleVerifier [0x00A60416+522518]
+	Ordinal0 [0x00974EAB+1789611]
+	Ordinal0 [0x009797A8+1808296]
+	Ordinal0 [0x00979895+1808533]
+	Ordinal0 [0x009826C1+1844929]
+	BaseThreadInitThunk [0x75E4FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DD7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DD7A6E+238]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alan Sanchez\Desktop\FLow1_Automation\test\test_FLow1.py", line 36, in test_Regression_test_1
+    EditDetailsPage(driver).edit_location_type(self.file)
+  File "C:\Users\Alan Sanchez\Desktop\FLow1_Automation\src\PageObject\Pages\EditDetailsPage.py", line 92, in edit_location_type
+    self.get_element_location_type_btn().click()
+  File "C:\Users\Alan Sanchez\Desktop\FLow1_Automation\src\PageObject\Pages\EditDetailsPage.py", line 43, in get_element_location_type_btn
+    return self.driver.find_element(By.XPATH, self.locationTypeBtn)
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 857, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 435, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.81)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009D5FD3+2187219]
+	Ordinal0 [0x0096E6D1+1763025]
+	Ordinal0 [0x00883D40+802112]
+	Ordinal0 [0x00878A12+756242]
+	Ordinal0 [0x00879248+758344]
+	Ordinal0 [0x0087AB02+764674]
+	Ordinal0 [0x00874379+738169]
+	Ordinal0 [0x008851D0+807376]
+	Ordinal0 [0x008DC7A2+1165218]
+	Ordinal0 [0x008CC9A6+1100198]
+	Ordinal0 [0x008A6F80+946048]
+	Ordinal0 [0x008A7E76+949878]
+	GetHandleVerifier [0x00C790C2+2721218]
+	GetHandleVerifier [0x00C6AAF0+2662384]
+	GetHandleVerifier [0x00A6137A+526458]
+	GetHandleVerifier [0x00A60416+522518]
+	Ordinal0 [0x00974EAB+1789611]
+	Ordinal0 [0x009797A8+1808296]
+	Ordinal0 [0x00979895+1808533]
+	Ordinal0 [0x009826C1+1844929]
+	BaseThreadInitThunk [0x75E4FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DD7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DD7A6E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_Regression_test_1</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p><selenium.webdriver.chrome.webdriver.WebDriver (session="b61687f68cf13c9bf6b23e8aa096c915")>
+<selenium.webdriver.chrome.webdriver.WebDriver (session="b61687f68cf13c9bf6b23e8aa096c915")>
+</p><p style="color:maroon;">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.81)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009D5FD3+2187219]
+	Ordinal0 [0x0096E6D1+1763025]
+	Ordinal0 [0x00883D40+802112]
+	Ordinal0 [0x00878A12+756242]
+	Ordinal0 [0x0086C2F0+705264]
+	Ordinal0 [0x008D3000+1126400]
+	Ordinal0 [0x008CCB53+1100627]
+	Ordinal0 [0x008A6F80+946048]
+	Ordinal0 [0x008A7E76+949878]
+	GetHandleVerifier [0x00C790C2+2721218]
+	GetHandleVerifier [0x00C6AAF0+2662384]
+	GetHandleVerifier [0x00A6137A+526458]
+	GetHandleVerifier [0x00A60416+522518]
+	Ordinal0 [0x00974EAB+1789611]
+	Ordinal0 [0x009797A8+1808296]
+	Ordinal0 [0x00979895+1808533]
+	Ordinal0 [0x009826C1+1844929]
+	BaseThreadInitThunk [0x75E4FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DD7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DD7A6E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Alan Sanchez\Desktop\FLow1_Automation\src\TestBase\WebDriverSetup.py", line 11, in tearDown
+    self.driver.close()
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 552, in close
+    self.execute(Command.CLOSE)
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 435, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.81)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009D5FD3+2187219]
+	Ordinal0 [0x0096E6D1+1763025]
+	Ordinal0 [0x00883D40+802112]
+	Ordinal0 [0x00878A12+756242]
+	Ordinal0 [0x0086C2F0+705264]
+	Ordinal0 [0x008D3000+1126400]
+	Ordinal0 [0x008CCB53+1100627]
+	Ordinal0 [0x008A6F80+946048]
+	Ordinal0 [0x008A7E76+949878]
+	GetHandleVerifier [0x00C790C2+2721218]
+	GetHandleVerifier [0x00C6AAF0+2662384]
+	GetHandleVerifier [0x00A6137A+526458]
+	GetHandleVerifier [0x00A60416+522518]
+	Ordinal0 [0x00974EAB+1789611]
+	Ordinal0 [0x009797A8+1808296]
+	Ordinal0 [0x00979895+1808533]
+	Ordinal0 [0x009826C1+1844929]
+	BaseThreadInitThunk [0x75E4FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DD7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DD7A6E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 0, Error: 2 -- Duration: 61.34 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
